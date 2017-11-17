@@ -1,0 +1,9 @@
+{
+  "name": "t3w1",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "jsdoc": "^3.5.5"
+  }
+}
