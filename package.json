@@ -4,11 +4,19 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "test": "./node_modules/.bin/mocha --reporter spec"
+    "test-mocha": "./node_modules/.bin/mocha ./test/**/*.mocha.js",
+    "test-mocha-watch": "mocha -R list -w ./test/**/*.mocha.js",
+    "test-jest": "jest",
+    "test-jest-watch": "jest --watch"
+  },
+  "jest": {
+    "testEnvironment": "node"
   },
   "devDependencies": {
+    "babel-preset-env": "^1.6.1",
     "chai": "^4.1.2",
-    "mocha": "^4.0.1",
-    "jsdoc": "^3.5.5"
+    "jest-cli": "^21.2.1",
+    "jsdoc": "^3.5.5",
+    "mocha": "^4.0.1"
   }
 }
